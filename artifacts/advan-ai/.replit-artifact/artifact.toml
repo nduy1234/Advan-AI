@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Advan AI"
+version = "1.0.0"
+id = "artifacts/advan-ai"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19863
+
+[services.development]
+run = "pnpm --filter @workspace/advan-ai run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/advan-ai", "run", "build" ]
+publicDir = "artifacts/advan-ai/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19863"
+BASE_PATH = "/"
