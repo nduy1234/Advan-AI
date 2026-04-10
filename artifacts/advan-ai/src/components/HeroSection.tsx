@@ -158,25 +158,6 @@ export function HeroSection() {
                 </a>
               </Button>
             </motion.div>
-
-            {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 1.1 }}
-              className="mt-12 flex gap-8"
-            >
-              {[
-                { value: "2–3 wks", label: "First results" },
-                { value: "340%", label: "Avg pipeline growth" },
-                { value: "65%", label: "Lower cost/meeting" },
-              ].map((stat) => (
-                <div key={stat.label}>
-                  <div className="text-2xl font-semibold text-white">{stat.value}</div>
-                  <div className="text-xs text-white/40 mt-0.5">{stat.label}</div>
-                </div>
-              ))}
-            </motion.div>
           </div>
 
           {/* Right: stacked cards */}
