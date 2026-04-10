@@ -43,6 +43,26 @@ export function SuccessStories() {
           </motion.div>
         </div>
 
+        {/* Case Study Photo */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative rounded-3xl overflow-hidden mb-8 max-w-2xl h-56"
+        >
+          <img
+            src="/success-story.jpg"
+            alt="Startup team celebrating pipeline growth milestone"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+          <div className="absolute top-5 left-5">
+            <div className="px-3 py-1.5 bg-white/95 backdrop-blur-sm rounded-lg">
+              <span className="text-xs font-semibold text-[#1a1a1a] uppercase tracking-wide">Case Study</span>
+            </div>
+          </div>
+        </motion.div>
+
         {/* 2x2 Stats Grid */}
         <div className="grid grid-cols-2 gap-4 mb-8 max-w-2xl">
           {stats.map((stat, i) => (
