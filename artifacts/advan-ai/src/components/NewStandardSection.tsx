@@ -124,13 +124,13 @@ export function NewStandardSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className={`w-full text-left px-5 pt-3.5 pb-3 rounded-2xl transition-all duration-300 relative overflow-hidden ${
+                className={`w-full text-left px-5 transition-all duration-300 relative overflow-hidden rounded-2xl ${
                   active === i
-                    ? "bg-[#1a1a1a]"
-                    : "bg-[#F8F7F4] hover:bg-[#eeecea]"
+                    ? "pt-3.5 pb-3 bg-[#1a1a1a]"
+                    : "pt-1.5 pb-1.5 bg-[#F8F7F4] hover:bg-[#eeecea]"
                 }`}
               >
-                <div className="flex items-center gap-3 mb-2">
+                <div className={`flex items-center gap-3 ${active === i ? "mb-2" : "mb-0"}`}>
                   <span className={`text-xs font-bold ${active === i ? "text-white/40" : "text-[#bbb]"}`}>{f.number}</span>
                   <p className={`font-bold text-base ${active === i ? "text-white" : "text-[#1a1a1a]"}`}>{f.title}</p>
                 </div>
