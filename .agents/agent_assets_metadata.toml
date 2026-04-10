@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "xTgK6sf2tU7mtjFr02AVG"
+uri = "file://attached_assets/stock_images/diverse_team.jpg"
+type = "image"
+title = "diverse multiracial team working together in modern office with laptops, professional collaboration"
