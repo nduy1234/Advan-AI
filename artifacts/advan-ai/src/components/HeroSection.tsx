@@ -102,12 +102,10 @@ export function HeroSection() {
         />
         <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-[#E85D04]/5 blur-[80px]" />
       </div>
-
       {/* Grid pattern */}
       <div className="absolute inset-0 opacity-[0.03]"
         style={{ backgroundImage: "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)", backgroundSize: "60px 60px" }}
       />
-
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: text */}
@@ -116,7 +114,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-white leading-[1.08] mb-6"
+              className="md:text-5xl lg:text-6xl xl:text-7xl font-light text-white mb-6 text-[40px]"
               style={{ fontFamily: "var(--font-serif)" }}
             >
               AI-Powered<br />Growth Systems for<br />
@@ -175,5 +173,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
