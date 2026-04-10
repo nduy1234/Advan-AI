@@ -109,7 +109,7 @@ export function NewStandardSection() {
             className="text-xl md:text-2xl lg:text-3xl font-light text-[#1a1a1a] leading-[1.2] mb-6 text-balance"
             style={{ fontFamily: "var(--font-serif)" }}
           >
-            Three AI-powered engines working together to build your pipeline.
+            A fully managed AI Growth Engine that delivers qualified sales meetings and predictable pipeline.
           </motion.h2>
         </div>
 
