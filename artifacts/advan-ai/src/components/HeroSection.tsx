@@ -112,17 +112,6 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: text */}
           <div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 text-xs text-white/60 mb-8">
-                <div className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-                AI Growth Engine — Now Available
-              </div>
-            </motion.div>
-
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
