@@ -114,7 +114,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="md:text-5xl lg:text-6xl xl:text-7xl font-light text-white mb-6 text-[40px]"
+              className="font-light text-white mb-6 text-[40px]"
               style={{ fontFamily: "var(--font-serif)" }}
             >
               AI-Powered<br />Growth Systems for<br />
