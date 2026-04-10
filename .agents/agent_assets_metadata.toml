@@ -1,5 +1,10 @@
 uploads = []
-generated = []
+
+[[generated]]
+id = "xbNnDjXRoVWQGq-ErsyFa"
+uri = "file://artifacts/advan-ai/public/diverse-team.png"
+type = "image"
+title = "generated_image"
 
 [[outputs]]
 id = "xTgK6sf2tU7mtjFr02AVG"
