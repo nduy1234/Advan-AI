@@ -119,7 +119,7 @@ export function HeroSection() {
               className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-white leading-[1.08] mb-6"
               style={{ fontFamily: "var(--font-serif)" }}
             >
-              The AI Engine for{" "}
+              AI-Powered<br />Growth Systems for<br />
               <span className="italic text-[#E85D04]">Predictable Revenue</span>
             </motion.h1>
 
