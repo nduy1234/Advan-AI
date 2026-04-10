@@ -129,7 +129,7 @@ export function HeroSection() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg text-white/60 max-w-lg mb-10 leading-relaxed"
             >
-              We build fully managed AI Growth Engines that deliver qualified B2B sales meetings through AI outbound, CRM reactivation, and real-time inbound conversion. First results in 2–3 weeks.
+              Build, optimize, and scale AI agents that generate new demand, reactivate existing leads, and convert inbound traffic.
             </motion.p>
 
             <motion.div
