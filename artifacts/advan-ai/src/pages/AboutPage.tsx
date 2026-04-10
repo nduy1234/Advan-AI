@@ -88,13 +88,13 @@ export default function AboutPage() {
                 </h2>
                 <div className="space-y-4 text-lg text-[#666] leading-relaxed">
                   <p>
-                    We exist to eliminate the unpredictability of B2B pipeline generation. Too many great companies stall because they can't build consistent outbound systems — not because their product isn't good enough.
+                    We're on a mission to democratize growth. Many companies struggle with unpredictable pipelines, inconsistent lead flow, and the impossible choice between hiring expensive SDR teams or settling for generic agencies.
                   </p>
                   <p>
-                    Advan AI was built to solve this. We bring enterprise-grade AI outbound infrastructure to companies at every stage, with a fully managed approach that delivers results without the overhead of building it yourself.
+                    Advan AI changes that equation. We've built an AI Growth Engine that combines the precision of data science, the personalization of a world-class SDR, and the scalability of intelligent automation.
                   </p>
                   <p>
-                    Our mission is simple: make qualified pipeline a constant, not a variable.
+                    The result? Predictable, scalable customer acquisition that lets you focus on what you do best — building great products and serving your customers.
                   </p>
                 </div>
               </motion.div>
