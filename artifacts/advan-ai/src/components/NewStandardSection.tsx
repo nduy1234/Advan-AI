@@ -124,33 +124,26 @@ export function NewStandardSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className={`w-full text-left p-5 rounded-2xl border transition-all duration-300 relative overflow-hidden ${
+                className={`w-full text-left px-5 pt-5 pb-4 rounded-2xl transition-all duration-300 relative overflow-hidden ${
                   active === i
-                    ? "bg-white border-[#ece9e4] shadow-lg"
-                    : "bg-[#F8F7F4] border-transparent hover:border-[#ece9e4]"
+                    ? "bg-[#1a1a1a]"
+                    : "bg-[#F8F7F4] hover:bg-[#eeecea]"
                 }`}
               >
-                {active === i && (
-                  <motion.div
-                    className="absolute bottom-0 left-0 h-0.5 rounded-full"
-                    style={{ backgroundColor: f.color }}
-                    initial={{ width: "0%" }}
-                    animate={{ width: `${progress}%` }}
-                    transition={{ duration: 0.05, ease: "linear" }}
-                  />
-                )}
-                <div className="flex items-center gap-4">
-                  <span className="text-xs font-bold text-[#999]">{f.number}</span>
-                  <div className="flex-1">
-                    <p className="font-semibold text-[#1a1a1a]">{f.title}</p>
-                    {active === i && (
-                      <p className="text-sm text-[#666] mt-1 leading-relaxed line-clamp-2">{f.description}</p>
-                    )}
-                  </div>
-                  <div
-                    className="w-2.5 h-2.5 rounded-full flex-shrink-0"
-                    style={{ backgroundColor: active === i ? f.color : "#ddd" }}
-                  />
+                <div className="flex items-center gap-3 mb-3">
+                  <span className={`text-xs font-bold ${active === i ? "text-white/40" : "text-[#bbb]"}`}>{f.number}</span>
+                  <p className={`font-bold text-base ${active === i ? "text-white" : "text-[#1a1a1a]"}`}>{f.title}</p>
+                </div>
+                <div className="h-0.5 rounded-full overflow-hidden" style={{ backgroundColor: active === i ? "rgba(255,255,255,0.1)" : "#e0ddd9" }}>
+                  {active === i && (
+                    <motion.div
+                      className="h-full rounded-full"
+                      style={{ backgroundColor: f.color }}
+                      initial={{ width: "0%" }}
+                      animate={{ width: `${progress}%` }}
+                      transition={{ duration: 0.05, ease: "linear" }}
+                    />
+                  )}
                 </div>
               </motion.button>
             ))}
