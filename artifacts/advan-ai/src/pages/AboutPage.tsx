@@ -20,7 +20,7 @@ const values = [
   {
     icon: Users,
     title: "Partnership Mindset",
-    description: "We're not a vendor — we're an extension of your growth team, fully invested in building a pipeline engine that compounds over time."
+    description: "We are not a vendor — we are an extension of your growth team, fully invested in building a pipeline engine that compounds over time."
   },
   {
     icon: TrendingUp,
